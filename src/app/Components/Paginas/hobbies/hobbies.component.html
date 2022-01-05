@@ -1,0 +1,118 @@
+
+    <video autoplay muted loop>
+      <source src="../../../../assets/video/funny.mp4">
+    </video>
+<div id="corpo">
+
+
+    <div class="well">
+     
+    <h1>Olá intruso</h1>
+    <h4>Já que chegou até aqui, mostrarei minha categoria de hobbies</h4>
+    </div>
+    <!--Animes-->
+    
+    
+<section>
+    <h2>
+        TOP 13 - Animes
+      </h2>
+      <carousel [itemsPerSlide]="itemsPerSlide"
+                [singleSlideOffset]="false"
+                [interval]="2000"
+                [indicatorsByChunk]="true">
+        <slide *ngFor="let animes of animes; let index=index">
+          <div class="card-deck dark ml-2">
+            <div class="card carding bg-dark">
+             <img  class="card-img-top" [src]="animes.image" alt="image slide" style="display: block; padding: 9px; width: 100%;">
+                <div class="card-body hidden">
+                  <h5 class="card-title">Top {{animes.string}}</h5>
+                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+          </div>
+            <br>
+            <br>
+        </slide>
+      </carousel>
+</section>
+
+    <!--Série-->
+   
+<section>
+    <h2>
+        TOP 12 - Séries
+      </h2>
+      <carousel [itemsPerSlide]="itemsPerSlide"
+                [singleSlideOffset]="false"
+                [interval]="3000"
+                [indicatorsByChunk]="true">
+        <slide *ngFor="let series of series; let index=index">
+          <div class="card-deck dark ml-2">
+            <div class="card carding bg-dark">
+             <img  class="card-img-top" [src]="series.image" alt="image slide" style="display: block; padding: 9px;">
+                <div class="card-body">
+                  <h5 class="card-title">Top {{series.string}}</h5>
+                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+          </div>
+            <br>
+            <br>
+        </slide>
+      </carousel>
+</section>
+    <!--Games-->
+   
+<section>
+    <h2>
+        TOP 12 - Games
+      </h2>
+      <carousel [itemsPerSlide]="itemsPerSlide"
+                [singleSlideOffset]="false"
+                [interval]="4100"
+                [indicatorsByChunk]="true">
+        <slide *ngFor="let games of games; let index=index">
+          <div class="card-deck dark ml-2">
+            <div class="card carding bg-dark">
+             <img  class="card-img-top" [src]="games.image" alt="image slide" style="display: block; padding: 9px; width: 100%;">
+                <div class="card-body">
+                  <h5 class="card-title">Top {{games.string}}</h5>
+                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+          </div>
+            <br>
+            <br>
+        </slide>
+      </carousel>
+</section>
+
+<!--Livros-->
+
+<section>
+    <h2>
+        TOP 12 - Livros
+      </h2>
+      <carousel [itemsPerSlide]="itemsPerSlide"
+                [singleSlideOffset]="false"
+                [interval]="4000"
+                [indicatorsByChunk]="true">
+        <slide *ngFor="let livros of livros; let index=index">
+          <div class="card-deck dark ml-2">
+            <div class="card carding bg-dark">
+             <img  class="card-img-top livro" [src]="livros.image" alt="image slide" style="display: block; padding: 9px; width: 100%;">
+                <div class="card-body">
+                  <h5 class="card-title">Top {{livros.string}}</h5>
+                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+          </div>
+            <br>
+            <br>
+        </slide>
+      </carousel>
+</section>
+
+<br><br><br>
+</div>
